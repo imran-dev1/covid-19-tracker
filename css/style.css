@@ -17,7 +17,7 @@ body {
 }
 .cases:hover .card-title,
 .cases:hover .card-text {
-  color: #fff;
+  color: #fff!important;
 }
 .deaths {
   border-top: 5px solid #d00e0e;
@@ -31,7 +31,7 @@ body {
 }
 .deaths:hover .card-title,
 .deaths:hover .card-text {
-  color: #fff;
+  color: #fff!important;
 }
 .recovered {
   border-top: 5px solid #139638;
@@ -45,7 +45,7 @@ body {
 }
 .recovered:hover .card-title,
 .recovered:hover .card-text {
-  color: #fff;
+  color: #fff!important;
 }
 .today {
   color: rgb(94, 93, 93) !important;
