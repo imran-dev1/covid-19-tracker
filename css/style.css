@@ -50,3 +50,12 @@ body {
 .today {
   color: rgb(94, 93, 93) !important;
 }
+.active {
+  background-color: rgb(226, 226, 226) !important;
+}
+.active:focus {
+  box-shadow: none !important;
+}
+.table thead th {
+  font-weight: 700 !important;
+}
