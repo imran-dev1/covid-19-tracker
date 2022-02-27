@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Covid Tracker</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container py-4">
+        <!-- Header -->
+        <header class="text-center">
+            <img class="mb-4 w-100" src="images/logo.png" style="max-width: 400px;" />
+        </header>
+
+        <!-- Main Section -->
+        <div class="row mt-4">
+            <div class="col-sm-8"></div>
+            <div class="col-sm-4 text-end">
+                <div class="btn-group shadow-0" role="group">
+                    <button type="button" class="btn btn-white fw-bold" data-mdb-color="dark" id="worldwide"
+                        onclick="loadWorldApi()">Worldwide</button>
+                    <button type="button" class="btn btn-white fw-bold" data-mdb-color="dark" id="bangladesh"
+                        onclick="loadBangladeshApi()">Bangladesh</button>
+                </div>
+            </div>
+        </div>
+        <div class="row g-3 mt-1">
+            <div class="col-sm-4">
+                <div class="card text-center cases">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Cases</h5>
+                        <p class="card-text fs-2 fw-bold" id="w-t-cases"></p>
+                        <p class="card-text today">Today: <span id="today-cases">+90.02k</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card text-center recovered">
+                    <div class="card-body">
+                        <h5 class="card-title">Recovered</h5>
+                        <p class="card-text fs-2 fw-bold" id="w-t-recovered"></p>
+                        <p class="card-text today">Today: <span id="today-recovered">+90.02k</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card text-center deaths">
+                    <div class="card-body">
+                        <h5 class="card-title">Deaths</h5>
+                        <p class="card-text fs-2 fw-bold" id="w-t-deaths"></p>
+                        <p class="card-text today">Today: <span id="today-deaths">+90.02k</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

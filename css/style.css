@@ -1,0 +1,52 @@
+body {
+  background-color: #fff6fd;
+  font-family: "Nunito", sans-serif;
+}
+.container {
+  max-width: 900px;
+}
+.cases {
+  border-top: 5px solid #0292b7;
+  transition: 0.5s ease;
+}
+.cases .card-text {
+  color: #0292b7;
+}
+.cases:hover {
+  background-color: #1fb3d8;
+}
+.cases:hover .card-title,
+.cases:hover .card-text {
+  color: #fff;
+}
+.deaths {
+  border-top: 5px solid #d00e0e;
+  transition: 0.5s ease;
+}
+.deaths .card-text {
+  color: #d00e0e;
+}
+.deaths:hover {
+  background-color: #f87777;
+}
+.deaths:hover .card-title,
+.deaths:hover .card-text {
+  color: #fff;
+}
+.recovered {
+  border-top: 5px solid #139638;
+  transition: 0.5s ease;
+}
+.recovered .card-text {
+  color: #139638;
+}
+.recovered:hover {
+  background-color: #43c066;
+}
+.recovered:hover .card-title,
+.recovered:hover .card-text {
+  color: #fff;
+}
+.today {
+  color: rgb(94, 93, 93) !important;
+}
