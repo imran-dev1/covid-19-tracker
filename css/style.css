@@ -1,5 +1,9 @@
 body {
   background-color: #fff6fd;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   font-family: "Nunito", sans-serif;
 }
 .container {
@@ -17,7 +21,7 @@ body {
 }
 .cases:hover .card-title,
 .cases:hover .card-text {
-  color: #fff!important;
+  color: #fff !important;
 }
 .deaths {
   border-top: 5px solid #d00e0e;
@@ -31,7 +35,7 @@ body {
 }
 .deaths:hover .card-title,
 .deaths:hover .card-text {
-  color: #fff!important;
+  color: #fff !important;
 }
 .recovered {
   border-top: 5px solid #139638;
@@ -45,17 +49,25 @@ body {
 }
 .recovered:hover .card-title,
 .recovered:hover .card-text {
-  color: #fff!important;
+  color: #fff !important;
 }
 .today {
   color: rgb(94, 93, 93) !important;
 }
+.switch {
+  box-shadow: 0 0 20px 2px rgba(255, 186, 186, 0.329) !important;
+}
 .active {
-  background-color: rgb(226, 226, 226) !important;
+  background-color: rgb(255, 186, 186) !important;
 }
 .active:focus {
   box-shadow: none !important;
 }
 .table thead th {
   font-weight: 700 !important;
+}
+@media all and (max-width: 425px) {
+  #table-body th img {
+    display: none;
+  }
 }

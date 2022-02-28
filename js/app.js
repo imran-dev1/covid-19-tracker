@@ -56,6 +56,7 @@ const loadAllCountriesApi = () => {
 };
 const displayByCountry = (datas) => {
   datas.forEach((data) => {
+    const flag = data.countryInfo.flag;
     const country = data.country;
     const cases = data.cases;
     const recovered = data.recovered;
@@ -63,7 +64,7 @@ const displayByCountry = (datas) => {
     const tableBody = document.getElementById("table-body");
     const tableRow = document.createElement("tr");
     tableRow.innerHTML = `
-      <th scope="row">${country}</th>
+      <th scope="row"><img src="${flag}" width=20px> ${country}</th>
       <td>+${(cases / 1000).toFixed(2)}k</td>
       <td>+${(recovered / 1000).toFixed(2)}k</td>
       <td>+${(deaths / 1000).toFixed(2)}k</td>
